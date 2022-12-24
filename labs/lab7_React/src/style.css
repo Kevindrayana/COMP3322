@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    background: #163a50;
+    font: 300 100%/120% "Tahoma", Arial, Helvetica, sans-serif;
+}
+
+header {
+    overflow: hidden;
+}
+
+header, nav, .contents, footer {
+    box-sizing: border-box;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, nav, footer {
+    background: #0f2736;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold
+}
+
+.contents {
+    padding: 1em 2em 2.5em 2em;
+}
+
+/* increase line spacing for main title */
+h1 {
+    line-height: 120%;
+    margin-top: 0.5em;
+    float: left;
+    width: auto;
+}
+
+header img {
+    float: left;
+}
+
+/* change color and remove underline for links */
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#plan_table a {
+    color: rgb(0, 47, 255);
+}
+
+/* size and margin for logo image */
+header img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0.5em;
+}
+
+form {
+    padding: 1em 2em;
+}
+
+input[type="number"] {
+    min-width: 4em;
+}
+
+/* style for footer */
+footer {
+    margin: auto;
+    text-align: center;
+}
+
+footer div {
+    padding: 1em;
+}
+
+.contents h2 {
+    text-align: center;
+}
+
+button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 5em;
+    height: 2em;
+}
+
+input {
+    width: 5em;
+    height: 1.6em;
+    margin-right: 2em;
+}
+
+#delete_div p{
+    color: gray;
+}
+
+
+header *, nav * {
+    color: #FFFFFF;
+}
+
+.contents {
+    background: #FFFFFF;
+}
+
+.subtitle {
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1080px) {
+    header,nav {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header img {
+        display: none;
+    }
+    header h1 {
+        padding: 0 0.5em;
+    }
+    nav div {
+        width: 100%;
+    }
+}
+
+.contents {
+    text-align: center;
+}
+
+.contents li{
+    text-align: left;
+}
+
+/* style for the table */
+table, th, td {
+    border: 1.8px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+    width: 400px;
+    height: 50px;
+}
+
+th {
+    background-color: rgb(178, 177, 177);
+}
+
+.highlight {
+    background-color: rgb(255, 0, 0);
+}
+
+#plan_table {
+    margin-bottom: 2em;
+}

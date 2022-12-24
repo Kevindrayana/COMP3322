@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Course Evaluation | COMP3322A Modern Technologies on World Wide Web</title>
+
+    <!-- Step 6: Link to the stylesheet (assets/stylesheets/main.css) here -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+<body>
+
+<header>
+    <img src="assets/images/logo.png" height="128" width="128">
+
+    <!-- Step 2: Change the following heading to use h1 -->
+    <h1>
+        <!-- Step 9: Wrap the course name in a <span> element with a custom class attribute -->
+        Course Evaluation <br> <span class="title">COMP3322A Modern Technologies on World Wide Web</span> 
+    </h1>
+</header>
+
+<nav>
+    <div><a href="index.html">Home</a></div>
+    <div><a href="new.html">Create New Survey</a></div>
+    <div><a href="statistics.html">Statistics</a></div>
+
+    <!-- Step 4: Add a hyperlink to the course's moodle forum (https://moodle.hku.hk/mod/forum/view.php?id=2655658) for the following entry -->
+    <div><a href="https://moodle.hku.hk/mod/forum/view.php?id=2655658">Support</a></div>
+</nav>
+
+<section class="contents">
+    <div>
+        <!-- Step 2: Change the following heading to use h2 -->
+        <h2>Instructions</h2>
+
+        <!-- Step 3: Add an unordered list here -->
+        <ul>
+            <li>Questions marked with <span class="required"></span> are required.</li>
+            <li>The survey is anonymous.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <form action="javascript:void(0);" autocomplete="on">
+        <div id="q1" class="question">
+            <!-- Step 2: Change the following question to use h3. Don't modify the class attribute -->
+            <h3 class="required">1. Would you recommend this course to a fellow student?</h3>
+        
+            <!-- Step 5: Create two radio buttons with labels "Yes" and "No" here -->
+            <input type="radio" name="radioInput" id="radioYes" value="Yes"><label for="radioYes">Yes</label>
+            <input type="radio" name="radioInput" id="radioNo" value="No"><label for="radioNo">No</label>
+           
+        </div>
+
+        <div id="q2" class="question">
+            <!-- Step 2: Change the following question to use h3. Don't modify the class attribute -->
+            <h3 class="required">2. Which parts of the course do you like most?</h3>
+            
+            <!-- Step 5: Create the 6 topics as checkboxes here -->
+            
+            <input type="checkbox" id="checkBoxWWWBasics" name="checkboxInput" value="WWW Basics"><label for="checkBoxWWWBasics">WWW Basics</label>
+            <input type="checkbox" id="checkboxHTMLCSS" name="checkboxInput" value="HTML/CSS"><label for="checkboxHTMLCSS">HTML/CSS</label>
+            <input type="checkbox" id="checkboxJavaScriptDOM" name="checkboxInput" value="JavaScript, DOM"><label for="checkboxJavaScriptDOM">JavaScript, DOM</label>
+            <input type="checkbox" id="checkboxNodeJs" name="checkboxInput" value="Node.js"><label for="checkboxNodeJs">Node.js</label>
+            <input type="checkbox" id="checkboxJSONMongoDB" name="checkboxInput" value="JSON, MongoDB"><label for="checkbox">JSON, MongoDB</label>
+            <input type="checkbox" id="checkboxReactJS" name="checkboxInput" value="ReactJS"><label for="checkboxReactJS">ReactJS</label>
+            
+        </div>
+    
+        <div id="q3" class="question">
+            <!-- Step 2: Change the following question to use h3 -->
+            <h3>3. How many lectures have you skipped?</h3>
+
+            <!-- Step 5: Create a number input here -->
+            
+            <input type="number" min="0" max="3">
+     
+        </div>
+
+        <div id="actions">
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+
+</section>
+
+<footer>
+    <div><a href="#">Back to top</a></div>
+</footer>
+
+</body>
+</html>

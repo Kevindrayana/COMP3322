@@ -1,0 +1,103 @@
+@import url("basics.css");
+
+header *, nav * {
+    color: #FFFFFF;
+}
+
+.contents {
+    background: #FFFFFF;
+}
+
+.subtitle {
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+nav div:hover {
+    background-color: #163a50;
+}
+
+#nav_out:hover{
+    background-color: brown;
+}
+
+@media screen and (max-width: 1080px) {
+    header,nav {
+        overflow: hidden;
+    }
+    nav {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    nav div {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header img {
+        display: none;
+    }
+    header h1 {
+        padding: 0 0.5em;
+    }
+    nav {
+        text-align: left;
+    }
+    nav div {
+        width: 100%;
+    }
+}
+
+.contents {
+    text-align: center;
+}
+
+#login {
+    text-align: center;
+}
+
+#login input{
+    margin-bottom: 0.5em;
+}
+
+#login input:hover, #comments p:hover {
+    box-shadow: 0 0 0.8em 0.1em grey;
+}
+
+#login p{
+    color: red;
+}
+
+.contents li{
+    text-align: left;
+}
+
+/* style for the table */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+    width: 400px;
+    height: 50px;
+}
+
+#comments p{
+    display: inline;
+    font-size: small;
+    margin: 2em;
+    border-style: solid;
+    border-width: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#comments{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

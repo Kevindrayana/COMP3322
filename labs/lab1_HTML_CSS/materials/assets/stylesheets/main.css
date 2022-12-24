@@ -1,0 +1,39 @@
+@import url("basics.css");
+/*
+  ================= Your task: modify or add more styles below  =================
+*/
+
+header, nav {
+    /* Step 7: Set the text color to white */
+    color: #FFFFFF;
+}
+
+.contents {
+    /* Step 7: Set the background color to white */
+    background-color: #FFFFFF;
+}
+
+#actions {
+    /* Step 8: Let the action buttons float to right */
+    float: right;
+}
+
+/* Step 9: Add a rule that reduces the font size and weight of the course name */
+.title{
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+/* Step 10: Add spaces between checkboxes */
+input[type="checkbox"] + label{
+    margin-right: 20px;
+}
+/* Step 11. Add hovering effects to the navigation links */
+nav div:hover{
+    background-color: #163a50;
+}
+/* Step 12. Add red asterisks for required questions */
+.required::before{
+    content:"*";
+    color: red;
+}

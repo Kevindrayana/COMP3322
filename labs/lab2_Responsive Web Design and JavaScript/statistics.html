@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <!-- Step 2. Setting the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Evaluation | COMP3322A Modern Technologies on World Wide Web</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+
+    <!-- Step 5. Link the JavaScript file to the HTML page -->
+    <script src="assets/scripts/statistics.js"></script>
+</head>
+
+<!-- Step 6. Handle “onload” event on the page -->
+<body onload="show_results()">
+
+<header>
+    <img src="assets/images/logo.png" height="128" width="128">
+
+    <h1>
+        Course Evaluation <br> <span class="subtitle">COMP3322A Modern Technologies on World Wide Web</span>
+    </h1>
+</header>
+
+<nav>
+    <div><a href="index.html">Home</a></div>
+    <div><a href="new.html">Create New Survey</a></div>
+    <div><a href="statistics.html">Statistics</a></div>
+    <div><a href="https://moodle.hku.hk/mod/forum/view.php?id=2655658">Support</a></div>
+</nav>
+
+<section class="contents">
+    <div>
+        <h3>1. Would you recommend this course to a fellow student?</h3>
+
+        <pre id="result_recommend"></pre>
+    </div>
+
+    <div>
+        <h3>2. Which parts of the course do you like most?</h3>
+
+        <pre id="result_favourites"></pre>
+    </div>
+    
+    <div>
+        <h3>3. How many lectures have you skipped?</h3>
+
+        <pre id="result_skipping"></pre>
+    </div>
+</section>
+
+<footer>
+    <div><a href="#">Back to top</a></div>
+</footer>
+
+</body>
+</html>

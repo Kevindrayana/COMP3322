@@ -1,0 +1,86 @@
+@import url("basics.css");
+
+header *, nav * {
+    color: #FFFFFF;
+}
+
+.contents {
+    background: #FFFFFF;
+}
+
+#actions {
+    float: right;
+}
+
+.subtitle {
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+nav div:hover {
+    background-color: #163a50;
+}
+
+.required::before {
+    content: "*";
+    color: red;
+}
+
+/* Step 3: Enable the following rules when the screen width is no larger than 1080px */
+
+@media only screen and (max-width: 1080px){
+    header,nav {
+        overflow: hidden;
+    }
+    nav {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    nav div {
+        margin-top: 0;
+    }
+}
+
+
+/* Step 3: Enable the following rules when the screen width is no larger than 720px */
+@media only screen and (max-width: 720px){
+    header img {
+        display: none;
+    }
+    header h1 {
+        padding: 0 0.5em;
+    }
+    nav {
+        text-align: left;
+    }
+    nav div {
+        width: 100%;
+    }
+}
+
+
+
+/* Step 4: Implement a responsive grid-view */
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 720px){
+    [class*="col-"] {
+        width: 100%;
+    }
+}

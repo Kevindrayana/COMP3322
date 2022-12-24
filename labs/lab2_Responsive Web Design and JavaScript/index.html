@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <!-- Step 2. Setting the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Evaluation | COMP3322A Modern Technologies on World Wide Web</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    
+</head>
+<body>
+
+<header>
+    <img src="assets/images/logo.png" height="128" width="128">
+
+    <h1>
+        Course Evaluation <br> <span class="subtitle">COMP3322A Modern Technologies on World Wide Web</span>
+    </h1>
+</header>
+
+<nav>
+    <div><a href="index.html">Home</a></div>
+    <div><a href="new.html">Create New Survey</a></div>
+    <div><a href="statistics.html">Statistics</a></div>
+    <div><a href="https://moodle.hku.hk/mod/forum/view.php?id=2655658">Support</a></div>
+</nav>
+
+<section class="contents">
+    <div>
+        <h2>Instructions</h2>
+
+        <ul>
+            <li>Questions marked with <span class="required"></span> are required.</li>
+            <li>The survey is anonymous.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <form action="javascript:void(0);" autocomplete="on">
+        <div id="q1" class="question">
+            <h3 class="required">1. Would you recommend this course to a fellow student?</h3>
+        
+            <!-- Step 4. Implement a responsive grid-view -->
+            <div class="col-3"><input type="radio" id="q1-yes" name="q1" value="yes"><label for="q1-yes">Yes</label></div>
+            <div class="col-3"><input type="radio" id="q1-no" name="q1" value="no"><label for="q1-no">No</label></div>
+        </div>
+
+        <div id="q2" class="question">
+            <h3 class="required">2. Which parts of the course do you like most?</h3>
+
+            <!-- Step 4. Implement a responsive grid-view -->
+            <div class="col-3"><input type="checkbox" id="q2-www" name="q2" value="www"><label for="q2-www">WWW Basics</label></div>
+            <div class="col-3"><input type="checkbox" id="q2-html" name="q2" value="html"><label for="q2-html">HTML/CSS</label></div>
+            <div class="col-3"><input type="checkbox" id="q2-javascript" name="q2" value="javascript"><label for="q2-javascript">JavaScript, DOM</label></div>
+            <div class="col-3"><input type="checkbox" id="q2-nodejs" name="q2" value="nodejs"><label for="q2-nodejs">Node.js</label></div>
+            <div class="col-3"><input type="checkbox" id="q2-mongodb" name="q2" value="mongodb"><label for="q2-mongodb">JSON, MongoDB</label></div>
+            <div class="col-3"><input type="checkbox" id="q2-react" name="q2" value="react"><label for="q2-react">ReactJS</label></div>
+        </div>
+    
+        <div id="q3" class="question">
+            <h3>3. How many lectures have you skipped?</h3>
+
+            <input type="number" id="q3-num" name="q3" min="0" max="3" step="1">
+        </div>
+
+        <div id="actions">
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+
+</section>
+
+<footer>
+    <div><a href="#">Back to top</a></div>
+</footer>
+
+</body>
+</html>

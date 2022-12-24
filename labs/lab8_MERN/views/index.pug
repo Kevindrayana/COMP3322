@@ -1,0 +1,26 @@
+extends layout
+
+block content 
+    header
+        img(src='/images/logo.png' width="128" height="128")
+        h1 Course Study Plan
+            br 
+            span(class="subtitle") COMP3322A Modern Technologies on World Wide Web
+
+    section(class="contents")
+        h2 Instruction
+        ul
+            li Add/Remove a topic to/from your study plan by clicking the respective operation.
+            li Delete a topic permanently by typing its name into the input box and clicking the "Delete" button.
+        hr
+
+        h2 Topic Plan
+        div
+            table#plan_table
+        div#delete_div
+            p Fill in a topic name to delete it from the table permanently:
+            input#input_name(type='text', placeholder='topic name')
+            button#submit_delete Delete
+
+    footer
+        div <a href="#">Back to top</a>
