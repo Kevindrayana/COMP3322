@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP322 Assignment 1</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascripts/script.js"></script>
+</head>
+<body onload="init()">
+    <header>
+        <h1>Albums</h1>
+    
+        <form action="">
+            <div class="username">
+                <span>username:</span><input class="username-input" type="text" placeholder="input username">
+            </div>
+            <div class="password">
+                <span>password:</span><input class="password-input" type="password" placeholder="input password">
+            </div>
+            <button class="login-button" onclick="login(event)">Log in</button>
+            <div class="hello-username"></div>
+            <button class="logout-button hidden" onclick="logout(event)">Log out</button>
+            
+        </form>
+    </header>
+    <br>
+
+
+    <div class="container">
+        <div class="left">
+            <ul class="friends-list">
+
+            </ul>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+</body>
+</html>

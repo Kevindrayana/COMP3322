@@ -1,0 +1,51 @@
+POST http://localhost:3001/signin
+Content-Type: application/json
+
+{
+    "username": "Kevin",
+    "password": "1234"
+}
+
+###
+
+GET http://localhost:3001/logout
+
+###
+
+PUT http://localhost:3001/savenote/638e3290463ced7e708b1a58
+Content-Type: application/json
+
+{
+    "title": "Updated Title",
+    "content": "Updated Content"
+}
+
+###
+
+GET http://localhost:3001/searchnotes?searchstr=assignment4a
+Content-Type: application/json
+
+{
+    "title": "Updated Title",
+    "content": "Updated Content"
+}
+
+###
+
+GET http://localhost:3001/getnote?noteid=6390ac4b463ced7e708b1a66
+Content-Type: application/json
+
+{
+    "title": "Updated Title",
+    "content": "Updated Content"
+}
+
+###
+
+POST http://localhost:3001/addnote
+Content-Type: application/json
+
+{
+    "title": "new note",
+    "content": "this is a new note"
+}
